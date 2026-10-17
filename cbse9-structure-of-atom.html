@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the structure of the atom for CBSE Class 9 Science. Explore atomic models, subatomic particles, and valency with NCERT-grounded explanations.">
+    <title>Structure of the Atom for CBSE Class 9: Models, Particles and Valency | CBSEClass9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f7ff;
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1.2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #5B21B6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #7C3AED;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-date {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .article-body {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        
+        .article-body p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            font-size: 1rem;
+            color: #444;
+        }
+        
+        .article-body h2 {
+            color: #5B21B6;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 700;
+        }
+        
+        .article-body h3 {
+            color: #7C3AED;
+            font-size: 1.2rem;
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+        
+        .article-body ul, .article-body ol {
+            margin: 1rem 0 1.2rem 2rem;
+        }
+        
+        .article-body li {
+            margin-bottom: 0.6rem;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h4 {
+            color: #5B21B6;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .highlight-box p {
+            color: #333;
+            font-size: 0.95rem;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #5B21B6;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        footer {
+            background-color: #2E1065;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer a {
+            color: #A78BFA;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            color: #C4B5FD;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .article-body {
+                padding: 1.5rem;
+            }
+            
+            .article-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-structure-of-atom.html">
+<meta property="og:title" content="Structure of the Atom for CBSE Class 9: Models, Particles and Valency">
+<meta property="og:description" content="Learn the structure of the atom for CBSE Class 9 Science. Explore atomic models, subatomic particles, and valency with NCERT-grounded explanations.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-structure-of-atom.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Structure of the Atom for CBSE Class 9: Models, Particles and Valency">
+<meta name="twitter:description" content="Learn the structure of the atom for CBSE Class 9 Science. Explore atomic models, subatomic particles, and valency with NCERT-grounded explanations.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Structure of the Atom for CBSE Class 9: Models, Particles and Valency", "description": "Learn the structure of the atom for CBSE Class 9 Science. Explore atomic models, subatomic particles, and valency with NCERT-grounded explanations.", "datePublished": "2026-10-17", "dateModified": "2026-10-17", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-structure-of-atom.html"}, "articleSection": "Science"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Rohan Verma</a> &middot; 📅 October 17, 2026</div>
+    <nav>
+        <div class="container">
+            <a href="/">← CBSEClass9.com</a>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+            <span class="subject-badge">Science</span>
+            <h1>Structure of the Atom for CBSE Class 9: Models, Particles and Valency</h1>
+            <p class="hero-date">Published on October 17, 2026</p>
+        </div>
+    </section>
+    
+    <div class="article-container">
+        <article class="article-body">
+            <p>
+                The structure of the atom is one of the most fundamental topics in CBSE Class 9 Science. Understanding how atoms are organized and what particles constitute them is essential for grasping chemistry concepts, from bonding to reactions. This article covers the key concepts from the NCERT Chapter 4: "Structure of the Atom" with focus on models, subatomic particles, and valency.
+            </p>
+            
+            <h2>1. Evolution of Atomic Models: From Dalton to Bohr</h2>
+            
+            <p>
+                The understanding of atomic structure has evolved significantly over time. Each atomic model built upon the discoveries of scientists before them, refining our knowledge of what atoms look like.
+            </p>
+            
+            <h3>Dalton's Atomic Model (1808)</h3>
+            <p>
+                John Dalton proposed that all matter is made up of tiny indivisible particles called atoms. According to Dalton's model:
+            </p>
+            <ul>
+                <li>Atoms are indivisible and indestructible</li>
+                <li>All atoms of a given element are identical</li>
+                <li>Atoms combine in simple whole-number ratios</li>
+            </ul>
+            <p>
+                However, Dalton's model couldn't explain electrical properties of atoms or how atoms bond together.
+            </p>
+            
+            <h3>Thomson's Model (1897)</h3>
+            <p>
+                J.J. Thomson discovered the electron and proposed the "plum pudding model" of the atom. He suggested that an atom is a positively charged sphere with negatively charged electrons embedded in it, like plums in a pudding. This was the first model showing that atoms have a subatomic structure.
+            </p>
+            
+            <h3>Rutherford's Model (1909)</h3>
+            <p>
+                Ernest Rutherford conducted his famous gold foil experiment, which led to the nuclear model of the atom. His key conclusions were:
+            </p>
+            <ul>
+                <li>Most of the atom is empty space</li>
+                <li>A positively charged nucleus exists at the center containing most of the atom's mass</li>
+                <li>Electrons revolve around the nucleus in empty space</li>
+            </ul>
+            
+            <h3>Bohr's Model (1913)</h3>
+            <p>
+                Niels Bohr refined Rutherford's model to explain the stability of atoms and their spectral lines. His atomic model introduced the concept of electron shells or energy levels. Key points of Bohr's model include:
+            </p>
+            <ul>
+                <li>Electrons revolve around the nucleus in fixed circular orbits or shells</li>
+                <li>Each shell has a specific energy</li>
+                <li>Electrons can jump from one shell to another by absorbing or emitting energy</li>
+                <li>The first shell can hold maximum 2 electrons, second shell can hold 8, and so on</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h4>📌 Exam Tip</h4>
+                <p>
+                    For CBSE Class 9 exams, focus on Bohr's model as the primary model taught at this level. Remember the electron shell capacity: 2, 8, 8, 18 for the first four shells. Questions often ask to draw electron configurations and identify the number of shells in different elements.
+                </p>
+            </div>
+            
+            <h2>2. Subatomic Particles: The Building Blocks of Atoms</h2>
+            
+            <p>
+                Atoms are composed of three fundamental subatomic particles. Understanding their properties, charges, and locations is crucial for Class 9 Science.
+            </p>
+            
+            <h3>Protons</h3>
+            <p>
+                Protons are positively charged subatomic particles found in the nucleus of an atom. Each proton carries a charge of +1. The number of protons in an atom determines the element's identity, which is called the atomic number. For example, all hydrogen atoms have 1 proton, all carbon atoms have 6 protons, and so on.
+            </p>
+            
+            <h3>Neutrons</h3>
+            <p>
+                Neutrons are neutral particles (no charge) also located in the nucleus. They contribute to the mass of the atom but do not affect the chemical properties significantly. The number of neutrons can vary in atoms of the same element, giving rise to isotopes. The mass number of an atom equals the sum of protons and neutrons.
+            </p>
+            
+            <h3>Electrons</h3>
+            <p>
+                Electrons are negatively charged particles that revolve around the nucleus in shells. Each electron carries a charge of -1. The number of electrons in a neutral atom equals the number of protons. Electrons determine the chemical properties and reactivity of elements.
+            </p>
+            
+            <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem;">
+                <tr style="background-color: #5B21B6; color: white;">
+                    <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left;">Particle</th>
+                    <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left;">Charge</th>
+                    <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left;">Location</th>
+                    <th style="border: 1px solid #ddd; padding: 0.8rem; text-align: left;">Mass (relative)</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Proton</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">+1</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Nucleus</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">1</td>
+                </tr>
+                <tr style="background-color: #f9f7ff;">
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Neutron</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">0</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Nucleus</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">1</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Electron</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">-1</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">Shells around nucleus</td>
+                    <td style="border: 1px solid #ddd; padding: 0.8rem;">1/1840</td>
+                </tr>
+            </table>
+            
+            <h2>3. Electron Configuration and Valency (NCERT Chapter 4 Focus)</h2>
+            
+            <p>
+                Valency is one of the most important concepts in Class 9 Chemistry. It determines how atoms combine with each other and forms the basis of understanding chemical bonding.
+            </p>
+            
+            <h3>What is Valency?</h3>
+            <p>
+                Valency is the combining capacity of an element. It represents the number of electrons lost, gained, or shared by an atom to achieve a stable configuration (usually achieving the same electron configuration as a noble gas). Valency is a key concept for predicting how elements bond together in compounds.
+            </p>
+            
+            <h3>Relationship Between Electron Configuration and Valency</h3>
+            <p>
+                An atom's valency is determined by the number of electrons in its outermost shell. According to the Octet Rule (inspired by Bohr's model), atoms tend to fill their outermost shell with 8 electrons for stability. For
