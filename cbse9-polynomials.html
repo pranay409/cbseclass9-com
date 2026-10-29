@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polynomials for CBSE Class 9 Maths: Factor Theorem and Identities Explained | CBSEClass9</title>
+    <meta name="description" content="Learn polynomials, factor theorem & algebraic identities for CBSE Class 9 Maths with NCERT concepts, solved examples & exam tips.">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #ffffff;
+        }
+        
+        header {
+            background: #f8f8f8;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: #5B21B6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            color: #7C3AED;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .hero-meta {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        h2 {
+            color: #2E1065;
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #7C3AED;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #5B21B6;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        ul, ol {
+            margin: 20px 0 20px 30px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        li {
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box {
+            background: #F5F3FF;
+            border-left: 5px solid #7C3AED;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h4 {
+            color: #5B21B6;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .highlight-box p {
+            color: #333;
+            margin: 0;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .cta-box p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .cta-box a {
+            display: inline-block;
+            background: white;
+            color: #5B21B6;
+            padding: 14px 35px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: transform 0.3s;
+        }
+        
+        .cta-box a:hover {
+            transform: scale(1.05);
+        }
+        
+        .feature-list {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border-left: 4px solid #7C3AED;
+        }
+        
+        .feature-list ul {
+            margin-left: 20px;
+        }
+        
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background: #2E1065;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+        
+        footer p {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #7C3AED;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .formula-box {
+            background: #f0f4ff;
+            border: 2px solid #7C3AED;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+        }
+        
+        strong {
+            color: #5B21B6;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .cta-box {
+                padding: 25px;
+            }
+            
+            .cta-box h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-polynomials.html">
+<meta property="og:title" content="Polynomials for CBSE Class 9 Maths: Factor Theorem and Identities Explained">
+<meta property="og:description" content="Learn polynomials, factor theorem &amp; algebraic identities for CBSE Class 9 Maths with NCERT concepts, solved examples &amp; exam tips.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-polynomials.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Polynomials for CBSE Class 9 Maths: Factor Theorem and Identities Explained">
+<meta name="twitter:description" content="Learn polynomials, factor theorem &amp; algebraic identities for CBSE Class 9 Maths with NCERT concepts, solved examples &amp; exam tips.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Polynomials for CBSE Class 9 Maths: Factor Theorem and Identities Explained", "description": "Learn polynomials, factor theorem & algebraic identities for CBSE Class 9 Maths with NCERT concepts, solved examples & exam tips.", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-polynomials.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Divya Reddy</a> &middot; 📅 October 29, 2026</div>
+    <header>
+        <nav>
+            <a href="/">← CBSEClass9.com</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">MATHS</span>
+            <h1>Polynomials for CBSE Class 9: Factor Theorem and Identities Explained</h1>
+            <div class="hero-meta">Published on October 29, 2026</div>
+        </div>
+    </section>
+
+    <div class="container">
+        <p style="font-size: 18px; line-height: 1.8; margin-bottom: 25px;">
+            Polynomials form the backbone of algebra in CBSE Class 9 Maths (Chapter 2, NCERT). Understanding polynomials, the factor theorem, and algebraic identities is crucial for scoring well in board exams and competitive entrance tests. This comprehensive guide covers everything you need to master this essential topic.
+        </p>
+
+        <h2>Understanding Polynomials: NCERT Chapter 2 Fundamentals</h2>
+        
+        <p>
+            A <strong>polynomial</strong> is an algebraic expression consisting of variables and coefficients combined using addition, subtraction, and multiplication operations. According to NCERT Class 9, polynomials are classified based on their degree and number of terms.
+        </p>
+        
+        <h3>Key Definitions:</h3>
+        <ul>
+            <li><strong>Degree of a polynomial:</strong> The highest power of the variable in the polynomial. For example, in 3x² + 2x + 5, the degree is 2.</li>
+            <li><strong>Coefficient:</strong> The numerical factor of each term. In 5x³, 5 is the coefficient.</li>
+            <li><strong>Constant term:</strong> The term without a variable.</li>
+            <li><strong>Monomial:</strong> Polynomial with one term (e.g., 7x).</li>
+            <li><strong>Binomial:</strong> Polynomial with two terms (e.g., x + 5).</li>
+            <li><strong>Trinomial:</strong> Polynomial with three terms (e.g., x² + 3x + 2).</li>
+        </ul>
+
+        <div class="highlight-box">
+            <h4>⚠️ Common Mistake to Avoid</h4>
+            <p>Students often confuse polynomials with other algebraic expressions. Remember: a polynomial cannot have negative powers or fractional powers of variables. For example, x⁻¹ + 2 or √x + 3 are NOT polynomials. This distinction is frequently tested in CBSE board exams.</p>
+        </div>
+
+        <h3>Polynomial Classification:</h3>
+        <div class="formula-box">
+Linear Polynomial: ax + b (degree 1, e.g., 2x + 3)<br>
+Quadratic Polynomial: ax² + bx + c (degree 2, e.g., x² + 5x + 6)<br>
+Cubic Polynomial: ax³ + bx² + cx + d (degree 3, e.g., x³ + 2x + 1)
+        </div>
+
+        <h2>The Factor Theorem and Its Applications</h2>
+        
+        <p>
+            The <strong>Factor Theorem</strong> is one of the most important concepts in CBSE Class 9 polynomials. It states that: <em>"If (x - a) is a factor of polynomial p(x), then p(a) = 0. Conversely, if p(a) = 0, then (x - a) is a factor of p(x)."</em>
+        </p>
+
+        <h3>Practical Application with Examples:</h3>
+        <p>
+            <strong>Example 1:</strong> Check if (x - 2) is a factor of p(x) = x³ - 2x² - x + 2.
+        </p>
+        <p>
+            Solution: Substitute x = 2 in p(x):<br>
+            p(2) = 2³ - 2(2)² - 2 + 2 = 8 - 8 - 2 + 2 = 0<br>
+            Since p(2) = 0, (x - 2) is a factor.
+        </p>
+
+        <h3>Step-by-Step Factorization Using Factor Theorem:</h3>
+        <ol>
+            <li>Identify possible rational roots using the Rational Root Theorem (factors of constant term ÷ factors of leading coefficient).</li>
+            <li>Test each candidate by substituting in the polynomial.</li>
+            <li>When p(a) = 0 is found, (x - a) is a factor.</li>
+            <li>Use polynomial division to find other factors.</li>
+        </ol>
+
+        <div class="feature-list">
+            <h3>Why Factor Theorem Matters in Exams:</h3>
+            <ul>
+                <li>Direct application in 2-3 mark questions on factorization</li>
+                <li>Essential for solving higher-degree polynomial problems</li>
+                <li>Foundation for understanding polynomial equations in higher classes</li>
+                <li>Frequently appears in CBSE board exams and entrance tests</li>
+            </ul>
+        </div>
+
+        <h2>Algebraic Identities: Essential Formulas for Class 9</h2>
+        
+        <p>
+            NCERT Chapter 2 emphasizes six major algebraic identities that form the cornerstone of polynomial manipulation. These identities are used extensively for expanding, factorizing, and simplifying expressions.
+        </p>
+
+        <h3>The Six Standard Identities:</h3>
+        <div class="formula-box">
+(a + b)² = a² + 2ab + b²<br><br>
+(a - b)² = a² - 2ab + b²<br><br>
+(a + b)(a - b) = a² - b²<br><br>
+(x + a)(x + b) = x² + (a + b)x + ab<br><br>
+(a + b)³ = a³ + 3a²b + 3ab² + b³<br><br>
+(a - b)³ = a³ - 3a²b + 3ab² - b³
+        </div>
+
+        <h3>Additional Important Identities:</h3>
+        <ul>
+            <li><strong>a³ + b³ = (a + b)(a² - ab + b²)</strong> - Used for factorizing sum of cubes</li>
+            <li><strong>a³ - b³ = (a - b)(a² + ab + b²)</strong> - Used for factorizing difference of cubes</li>
+            <li><strong>a³ + b³ + c³ - 3abc = (a + b + c)(a² + b² + c² - ab - bc - ca)</strong> - Applied in complex problems</li>
+        </ul>
+
+        <h3>Practical Application Example:</h3>
+        <p>
+            <strong>Expand (2x + 3)²:</strong><br>
+            Using identity (a + b)² = a² + 2ab + b²<br>
+            Here a = 2x, b = 3<br>
+            (2x + 3)² = (2x)² + 2(2x)(3) + 3² = 4x² + 12x + 9
+        </p>
+
+        <p>
+            <strong>Factorize 9x² - 25y²:</strong><br>
+            Using identity a² - b² = (a + b)(a - b)<br>
+            Here a = 3x, b = 5y<br>
+            9x² - 25y² = (3x)² - (5y)² = (3x + 5y)(3x - 5y)
+        </p>
+
+        <div class="highlight-box">
+            <h4>💡 Pro Tip for Exam Success</h4>
+            <p>Master the algebraic identities by creating a personal formula sheet and practicing 5-10 problems with each identity. CBSE exams frequently test identity applications in 1-mark MCQs and 2-mark short answer questions. Speed and accuracy in applying these identities can add 10-
