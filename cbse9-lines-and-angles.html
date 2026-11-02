@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lines and Angles for CBSE Class 9: Theorems You Must Memorise | CBSEClass9</title>
+    <meta name="description" content="Master Lines and Angles for CBSE Class 9 Maths with complete theorems, proofs, and exam patterns. NCERT-based content for quick revision and board prep.">
+    <meta name="keywords" content="lines and angles, CBSE class 9, maths theorems, geometry, NCERT">
+    <meta name="author" content="CBSEClass9">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5B21B6;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #7C3AED;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        article {
+            padding: 40px;
+        }
+
+        h2 {
+            color: #5B21B6;
+            font-size: 28px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #7C3AED;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #444;
+        }
+
+        strong {
+            color: #5B21B6;
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .highlight-box {
+            background: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h3 {
+            color: #5B21B6;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #5B21B6;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+            color: white;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .cta-box p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .cta-btn {
+            background: white;
+            color: #5B21B6;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #F5F3FF;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #2E1065;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        footer a {
+            color: #7C3AED;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .theorem-box {
+            background: #f5f5f5;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 3px solid #5B21B6;
+            border-radius: 4px;
+        }
+
+        .theorem-box strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            article {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            nav {
+                padding: 0 15px;
+            }
+
+            nav a {
+                font-size: 16px;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-lines-and-angles.html">
+<meta property="og:title" content="Lines and Angles for CBSE Class 9: Theorems You Must Memorise">
+<meta property="og:description" content="Master Lines and Angles for CBSE Class 9 Maths with complete theorems, proofs, and exam patterns. NCERT-based content for quick revision and board prep.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-lines-and-angles.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lines and Angles for CBSE Class 9: Theorems You Must Memorise">
+<meta name="twitter:description" content="Master Lines and Angles for CBSE Class 9 Maths with complete theorems, proofs, and exam patterns. NCERT-based content for quick revision and board prep.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Lines and Angles for CBSE Class 9: Theorems You Must Memorise", "description": "Master Lines and Angles for CBSE Class 9 Maths with complete theorems, proofs, and exam patterns. NCERT-based content for quick revision and board prep.", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-lines-and-angles.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Ananya Sharma</a> &middot; 📅 November 02, 2026</div>
+    <header>
+        <nav>
+            <a href="/">← CBSEClass9</a>
+            <span style="font-size: 14px; color: #999;">Maths | Lines and Angles</span>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subject-badge">Mathematics</div>
+            <h1>Lines and Angles for CBSE Class 9: Theorems You Must Memorise</h1>
+            <div class="hero-date">Published: November 02, 2026</div>
+        </div>
+    </section>
+
+    <div class="container">
+        <article>
+            <p>
+                <strong>Lines and Angles</strong> is Chapter 6 in the CBSE Class 9 NCERT Maths textbook, and it forms the foundation for geometry in higher classes. This chapter deals with fundamental concepts and theorems that appear consistently in board exams and competitive tests. Mastering the theorems and their applications is crucial for scoring well in the geometry section of your Class 9 board exam.
+            </p>
+
+            <p>
+                In this comprehensive guide, we'll cover all the essential theorems related to lines and angles that you must memorise, along with real-world applications and common exam patterns.
+            </p>
+
+            <h2>1. Basic Definitions and Angle Theorems (NCERT 6.1-6.3)</h2>
+
+            <p>
+                Before diving into theorems, let's establish the foundational definitions that form the basis of this chapter:
+            </p>
+
+            <ul>
+                <li><strong>Point:</strong> A location with no dimension (length, width, or height)</li>
+                <li><strong>Line:</strong> A straight path extending infinitely in both directions</li>
+                <li><strong>Ray:</strong> A line that starts at a point and extends infinitely in one direction</li>
+                <li><strong>Line Segment:</strong> A portion of a line bounded by two endpoints</li>
+                <li><strong>Angle:</strong> The measure of rotation between two rays sharing a common endpoint</li>
+            </ul>
+
+            <p>
+                The chapter introduces various types of angles: acute (0°-90°), right (90°), obtuse (90°-180°), straight (180°), and reflex (180°-360°). Understanding these classifications is essential for applying theorems correctly.
+            </p>
+
+            <div class="theorem-box">
+                <strong>Theorem 1: Linear Pair Axiom</strong>
+                If two angles form a linear pair, then they are supplementary (sum = 180°). This is one of the most frequently tested theorems in board exams.
+            </div>
+
+            <div class="theorem-box">
+                <strong>Theorem 2: Vertically Opposite Angles</strong>
+                When two lines intersect, the angles opposite to each other are equal. If lines AB and CD intersect at point O, then ∠AOC = ∠BOD and ∠AOD = ∠BOC.
+            </div>
+
+            <h2>2. Theorems on Parallel Lines and Transversals (NCERT 6.4-6.5)</h2>
+
+            <p>
+                This section contains the most important theorems you must memorise for the CBSE exam. These theorems are used extensively in solving geometry problems and form the basis for triangle properties in later chapters.
+            </p>
+
+            <p>
+                When a <strong>transversal</strong> (a line cutting two or more lines) intersects two parallel lines, it creates several angle relationships:
+            </p>
+
+            <div class="theorem-box">
+                <strong>Theorem 3: Corresponding Angles</strong>
+                If a transversal intersects two parallel lines, then each pair of corresponding angles is equal. Example: ∠1 = ∠5, ∠2 = ∠6, ∠3 = ∠7, ∠4 = ∠8.
+            </div>
+
+            <div class="theorem-box">
+                <strong>Theorem 4: Alternate Interior Angles</strong>
+                If a transversal intersects two parallel lines, then alternate interior angles are equal. If lines l || m and t is a transversal, then ∠3 = ∠6 and ∠4 = ∠5.
+            </div>
+
+            <div class="theorem-box">
+                <strong>Theorem 5: Co-interior (or Allied) Angles</strong>
+                If a transversal intersects two parallel lines, then co-interior angles are supplementary (sum = 180°). Example: ∠3 + ∠5 = 180° and ∠4 + ∠6 = 180°.
+            </div>
+
+            <p>
+                These three theorems are the pillars of the lines and angles chapter. The converse of these theorems is equally important: if corresponding angles are equal, or alternate interior angles are equal, or co-interior angles are supplementary, then the lines are parallel.
+            </p>
+
+            <div class="highlight-box">
+                <h3>⚠️ Common Mistake Alert</h3>
+                <p>
+                    Students often confuse <strong>corresponding angles</strong> with <strong>alternate interior angles</strong>. Remember: Corresponding angles are on the same side of the transversal (one interior, one exterior), while alternate interior angles are on opposite sides of the transversal and both are interior. Practicing diagram problems frequently will help you avoid this mistake during exams.
+                </p>
+            </div>
+
+            <h2>3. Angle Sum Property and Related Theorems (NCERT 6.6)</h2>
+
+            <p>
+                While this section touches on triangle properties (covered extensively in Chapter 7), the foundational angle concepts are crucial here.
+            </p>
+
+            <div class="theorem-box">
+                <strong>Theorem 6: Angles on a Straight Line</strong>
+                The sum of all angles on one side of a straight line is 180°. This is a direct consequence of the linear pair axiom and is used in numerous problems.
+            </div>
+
+            <p>
+                Another important concept is the <strong>angle sum at a point:</strong> If multiple angles are formed around a point, their sum equals 360°. This principle is tested in problems involving intersecting lines and rays emanating from a single point.
+            </p>
+
+            <p>
+                The chapter also implicitly leads to the triangle angle sum property: the sum of angles in a triangle is 180°. This can be proved using the parallel lines theorem, which is a critical link between this chapter and Chapter 7 (Triangles).
+            </p>
+
+            <h2>4. Exam-Specific Patterns and Problem-Solving Tips</h2>
+
+            <p>
+                Based on analysis of previous CBSE board papers (2018-2024), the Lines and Angles chapter typically features:
+            </p>
+
+            <ul>
+                <li><strong>Multiple Choice Questions (1 mark):</strong> Usually test direct application of theorems—identifying angle pairs, determining if lines are parallel, or calculating angle measures.</li>
+                <li><strong>Short Answer Questions (2-3 marks):</strong> Require proof or detailed explanation of angle relationships using theorems. Common patterns include "Prove that two lines are parallel" or "Find the measure of angles using given conditions."</li>
+                <li><strong>Long Answer Questions (4-5 marks):</strong> Integrate multiple theorems and require step-by-step logical reasoning. These often involve complex diagrams with multiple intersecting lines.</li>
+            </ul>
+
+            <p>
+                <strong>Pro Tips for Exams:</strong>
+            </p>
+
+            <ol>
+                <li>Always <strong>label the diagram carefully</strong> with all given information and unknown angles. This prevents logical errors.</li>
+                <li><strong>State the theorem explicitly</strong> before applying it—examiners give full marks only when you name the theorem used.</li>
+                <li>Practice problems that combine <strong>two or more theorems</strong> in a single question, as these are increasingly common in recent board papers.</li>
+                <li>Memorise the <strong>converse statements</strong> of all theorems—they're equally important for solving proof-based questions.</li>
+                <li>Use <strong>algebraic methods</strong> when angles are given as expressions (e.g., 2x, x+10). Set up equations using theorem relationships and solve.</li>
+            </ol>
+
+            <div class="cta-box">
+                <h3>Need Expert Guidance for Class 9 Maths?</h3>
+                <p>
+                    Master lines and angles and other tough maths topics with <strong>Padhle Yoddha</strong>—our recommended affordable coaching platform for Class 9-10 students. Get access to daily live classes, comprehensive study material, and doubt-solving sessions. Perfect for board exam preparation at an unbeatable price point of <strong>Rs. 2,000-3,000</strong> for the entire batch.
