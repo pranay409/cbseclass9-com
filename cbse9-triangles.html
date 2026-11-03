@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangles for CBSE Class 9: Congruence Rules with Solved Examples | CBSEClass9</title>
+    <meta name="description" content="Master triangle congruence rules (SSS, SAS, ASA, AAS, RHS) for CBSE Class 9 Maths. Learn with solved examples, diagrams & exam patterns.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #5B21B6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #7C3AED;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Article Body */
+        article {
+            background-color: white;
+            margin: 3rem auto;
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        article h2 {
+            color: #5B21B6;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        article h3 {
+            color: #7C3AED;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        article ul, article ol {
+            margin: 1.5rem 0 1.5rem 1.5rem;
+            line-height: 1.8;
+        }
+
+        article li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 5px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #5B21B6;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .highlight-box p {
+            color: #4c1d95;
+            margin: 0;
+            font-size: 0.98rem;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .cta-box a {
+            display: inline-block;
+            background-color: white;
+            color: #5B21B6;
+            padding: 0.8rem 1.8rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s;
+        }
+
+        .cta-box a:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2E1065;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #7C3AED;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+
+            article h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-triangles.html">
+<meta property="og:title" content="Triangles for CBSE Class 9: Congruence Rules with Solved Examples">
+<meta property="og:description" content="Master triangle congruence rules (SSS, SAS, ASA, AAS, RHS) for CBSE Class 9 Maths. Learn with solved examples, diagrams &amp; exam patterns.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-triangles.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Triangles for CBSE Class 9: Congruence Rules with Solved Examples">
+<meta name="twitter:description" content="Master triangle congruence rules (SSS, SAS, ASA, AAS, RHS) for CBSE Class 9 Maths. Learn with solved examples, diagrams &amp; exam patterns.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Triangles for CBSE Class 9: Congruence Rules with Solved Examples", "description": "Master triangle congruence rules (SSS, SAS, ASA, AAS, RHS) for CBSE Class 9 Maths. Learn with solved examples, diagrams & exam patterns.", "datePublished": "2026-11-03", "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-triangles.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Priya Nair</a> &middot; 📅 November 03, 2026</div>
+    <!-- Navigation -->
+    <nav>
+        <a href="/">← Back to CBSEClass9</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">MATHS</span>
+            <h1>Triangles for CBSE Class 9: Congruence Rules with Solved Examples</h1>
+            <p class="hero-date">Published on November 03, 2026</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article>
+            <p>
+                Triangles are one of the most fundamental geometric shapes in mathematics, and understanding their properties is crucial for CBSE Class 9 students. Chapter 7 of the NCERT Maths textbook focuses extensively on triangle congruence and similarity. In this comprehensive guide, we'll explore the congruence rules that help us determine when two triangles are identical in shape and size, with practical solved examples to strengthen your exam preparation.
+            </p>
+
+            <h2>Understanding Triangle Congruence (NCERT Chapter 7)</h2>
+            <p>
+                Two triangles are said to be congruent if they have the same shape and size. When triangles are congruent, their corresponding sides are equal in length, and their corresponding angles are equal in measure. Congruence is denoted by the symbol "≅". This concept is essential for solving geometric problems and proofs that frequently appear in CBSE Class 9 board exams and competitive entrance tests.
+            </p>
+            <p>
+                The importance of triangle congruence extends beyond just identifying equal triangles. It provides a foundation for understanding geometric proofs, establishing relationships between different figures, and solving complex problems involving distances and angles. CBSE exams typically allocate 15-20% of the geometry section to triangle-related questions.
+            </p>
+
+            <h2>The Five Congruence Rules Explained</h2>
+
+            <h3>1. SSS (Side-Side-Side) Rule</h3>
+            <p>
+                The SSS rule states that if all three sides of one triangle are equal to the corresponding three sides of another triangle, then the triangles are congruent. This is the most straightforward congruence criterion and requires only the measurement of sides to establish congruence.
+            </p>
+            <p>
+                <strong>Example:</strong> Triangle ABC has sides AB = 5 cm, BC = 6 cm, and AC = 7 cm. Triangle DEF has sides DE = 5 cm, EF = 6 cm, and DF = 7 cm. Since all corresponding sides are equal, △ABC ≅ △DEF by SSS rule.
+            </p>
+
+            <h3>2. SAS (Side-Angle-Side) Rule</h3>
+            <p>
+                The SAS rule states that if two sides and the included angle of one triangle are equal to the corresponding two sides and included angle of another triangle, the triangles are congruent. The included angle is the angle between the two sides being compared.
+            </p>
+            <p>
+                <strong>Example:</strong> In △PQR, PQ = 4 cm, ∠Q = 60°, and QR = 5 cm. In △XYZ, XY = 4 cm, ∠Y = 60°, and YZ = 5 cm. Here, △PQR ≅ △XYZ by SAS rule because two sides and the included angle match.
+            </p>
+
+            <h3>3. ASA (Angle-Side-Angle) Rule</h3>
+            <p>
+                The ASA rule states that if two angles and the included side of one triangle are equal to the corresponding two angles and included side of another triangle, then the triangles are congruent. The included side is the side between the two angles being compared.
+            </p>
+            <p>
+                <strong>Example:</strong> In △MNO, ∠M = 45°, MN = 6 cm, and ∠N = 65°. In △UVW, ∠U = 45°, UV = 6 cm, and ∠V = 65°. Since two angles and the included side are equal, △MNO ≅ △UVW by ASA rule.
+            </p>
+
+            <h3>4. AAS (Angle-Angle-Side) Rule</h3>
+            <p>
+                The AAS rule states that if two angles and a non-included side of one triangle are equal to the corresponding two angles and non-included side of another triangle, the triangles are congruent. Unlike ASA, the side here is not between the two angles.
+            </p>
+            <p>
+                <strong>Example:</strong> In △ABC, ∠A = 50°, ∠B = 70°, and BC = 8 cm (side opposite to angle A). In △DEF, ∠D = 50°, ∠E = 70°, and EF = 8 cm (side opposite to angle D). Since two angles and a non-included side match, △ABC ≅ △DEF by AAS rule.
+            </p>
+
+            <h3>5. RHS (Right Angle-Hypotenuse-Side) Rule</h3>
+            <p>
+                The RHS rule is specifically for right-angled triangles. It states that if the hypotenuse and one other side of a right-angled triangle are equal to the hypotenuse and corresponding side of another right-angled triangle, then the triangles are congruent. This rule is also called the Hypotenuse-Leg (HL) theorem.
+            </p>
+            <p>
+                <strong>Example:</strong> In right-angled △ABC with ∠B = 90°, AC = 10 cm (hypotenuse) and AB = 6 cm. In right-angled △PQR with ∠Q = 90°, PR = 10 cm (hypotenuse), and PQ = 6 cm. Since the hypotenuse and one side are equal, △ABC ≅ △PQR by RHS rule.
+            </p>
+
+            <div class="highlight-box">
+                <h4>⚠️ Common Mistake Alert</h4>
+                <p>
+                    Students often confuse AAA (Angle-Angle-Angle) as a congruence rule. However, AAA only proves similarity, NOT congruence. Two triangles with all corresponding angles equal will have the same shape but may differ in size. Remember: All congruent triangles are similar, but all similar triangles are NOT congruent.
+                </p>
+            </div>
+
+            <h2>Solved Examples for CBSE Exam Practice</h2>
+
+            <h3>Problem 1: Using SSS Rule</h3>
+            <p>
+                <strong>Question:</strong> Prove that if the diagonals of a quadrilateral bisect each other, then it is a parallelogram.
+            </p>
+            <p>
+                <strong>Solution:</strong> Let ABCD be a quadrilateral with diagonals AC and BD intersecting at point O such that AO = OC and BO = OD. In △AOB and △COD:
+            </p>
+            <ul>
+                <li>AO = OC (given)</li>
+                <li>BO = OD (given)</li>
+                <li>∠AOB = ∠COD (vertically opposite angles)</li>
+            </ul>
+            <p>
+                By SAS rule, △AOB ≅ △COD. Therefore, AB = CD and ∠ABO = ∠CDO. Since alternate angles are equal, AB || CD. Similarly, AD || BC. Hence, ABCD is a parallelogram.
+            </p>
+
+            <h3>Problem 2: Using RHS Rule</h3>
+            <p>
+                <strong>Question:</strong> In a right-angled triangle ABC with ∠B = 90°, if a perpendicular BD is drawn to the hypotenuse AC, prove that △ABD ≅ △CBA.
+            </p>
+            <p>
+                <strong>Solution:</strong> In right-angled △ABD and △CBA:
+            </p>
+            <ul>
+                <li>∠ADB = ∠ABC = 90° (given)</li>
+                <li>AB = AB (common side - hypotenuse of △ABD and side of △CBA)</li>
+                <li>AC = CA (common hypotenuse)</li>
+            </ul>
+            <p>
+                By RHS rule, △ABD ≅ △CBA (considering the correspondence A↔C, B↔B, D↔A).
+            </p>
+
+            <h3>Problem 3: Using ASA Rule</h3>
+            <p>
+                <strong>Question:</strong> In △ABC, AB = AC. If D and E are points on AB and AC respectively such that AD = AE, prove that △ADE ≅ △ACB.
+            </p>
+            <p>
+                <strong>Solution:</strong> In △ADE and △ACB:
+            </p>
+            <ul>
+                <li>∠DAE = ∠CAB (same angle)</li>
+                <li>AD = AE (given)</li>
+                <li>
