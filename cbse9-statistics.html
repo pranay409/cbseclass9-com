@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Statistics for CBSE Class 9: Learn Mean, Median, Mode and data representation techniques with exam-focused examples and NCERT solutions.">
+    <title>Statistics for CBSE Class 9: Mean, Median, Mode and Graphs | CBSEClass9</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav a {
+            color: #5B21B6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #7C3AED;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: #7C3AED;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .publish-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .content {
+            background-color: #fff;
+        }
+        
+        .content h2 {
+            color: #5B21B6;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        
+        .content ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.8rem;
+            line-height: 1.6;
+        }
+        
+        .ncert-ref {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Highlight Box */
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h3 {
+            color: #5B21B6;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .highlight-box p {
+            color: #555;
+            margin: 0;
+        }
+        
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #5B21B6;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2E1065;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        footer a {
+            color: #7C3AED;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 2rem 1rem;
+            }
+            
+            .content h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-statistics.html">
+<meta property="og:title" content="Statistics for CBSE Class 9: Mean, Median, Mode and Graphs">
+<meta property="og:description" content="Master Statistics for CBSE Class 9: Learn Mean, Median, Mode and data representation techniques with exam-focused examples and NCERT solutions.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-statistics.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Statistics for CBSE Class 9: Mean, Median, Mode and Graphs">
+<meta name="twitter:description" content="Master Statistics for CBSE Class 9: Learn Mean, Median, Mode and data representation techniques with exam-focused examples and NCERT solutions.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Statistics for CBSE Class 9: Mean, Median, Mode and Graphs", "description": "Master Statistics for CBSE Class 9: Learn Mean, Median, Mode and data representation techniques with exam-focused examples and NCERT solutions.", "datePublished": "2026-11-08", "dateModified": "2026-11-08", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-statistics.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Priya Nair</a> &middot; 📅 November 08, 2026</div>
+    <!-- Navigation -->
+    <nav>
+        <a href="/">← Back to CBSEClass9.com</a>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="subject-badge">Mathematics</span>
+        <h1>Statistics for CBSE Class 9: Mean, Median, Mode and Graphs</h1>
+        <p class="publish-date">Published on November 08, 2026</p>
+    </section>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <article class="content">
+            <p>Statistics is one of the most practical and frequently tested chapters in CBSE Class 9 Mathematics. As per the NCERT syllabus, Chapter 14 focuses on statistical measures including mean, median, mode, and various methods of data representation. Understanding these concepts is crucial for scoring well in your board exams and developing analytical thinking skills.</p>
+            
+            <p>In this comprehensive guide, we'll explore all key statistical concepts, solved examples, and exam-focused tips to help you master this chapter completely.</p>
+            
+            <h2>Understanding Mean, Median, and Mode (NCERT Chapter 14)</h2>
+            
+            <p>The three measures of central tendency—mean, median, and mode—are fundamental to statistics. These measures help us find a single value that represents the entire dataset.</p>
+            
+            <p><strong>Mean (Average):</strong> The mean is calculated by dividing the sum of all observations by the number of observations. For example, if the heights of 5 students are 150, 155, 160, 165, and 170 cm, the mean height is (150+155+160+165+170)/5 = 160 cm.</p>
+            
+            <p><strong>Median:</strong> The median is the middle value when all observations are arranged in ascending or descending order. For an odd number of observations, it's the middle value. For an even number, it's the average of the two middle values. In the above example, the median is 160 cm (the third value).</p>
+            
+            <p><strong>Mode:</strong> The mode is the value that appears most frequently in a dataset. If all values appear with equal frequency, there is no mode. Multiple modes can exist if several values have the same highest frequency.</p>
+            
+            <div class="highlight-box">
+                <h3>Common Exam Mistake ⚠️</h3>
+                <p>Students often confuse median with mean. Remember: <strong>Mean is the average</strong>, while <strong>median is the middle value</strong>. In skewed datasets, these two values can be very different. Always arrange data in order before finding the median!</p>
+            </div>
+            
+            <h2>Grouped Data and Frequency Distribution (NCERT Exam Pattern)</h2>
+            
+            <p>CBSE frequently asks questions about grouped data, where observations are organized into class intervals with their corresponding frequencies. This appears in Section C and D of your board exam papers (worth 3-4 marks).</p>
+            
+            <p>When working with grouped data:</p>
+            <ul>
+                <li>Find the mean using the formula: Mean = Σ(fi × xi) / Σfi, where fi is frequency and xi is the class mark</li>
+                <li>Calculate class marks by finding the midpoint of each class interval: (Lower + Upper)/2</li>
+                <li>For median in grouped data, use the formula: Median = L + [(n/2 - CF)/f] × h, where L is the lower class boundary, CF is cumulative frequency before the median class, f is frequency of median class, and h is class width</li>
+                <li>Mode for grouped data: Mode = L + [(f1 - f0) / (2f1 - f0 - f2)] × h</li>
+            </ul>
+            
+            <p class="ncert-ref">Reference: NCERT Class 9 Maths, Chapter 14: Statistics (Section on Grouped Data)</p>
+            
+            <h2>Data Representation: Bar Graphs, Histograms, and Frequency Polygons</h2>
+            
+            <p>Visual representation of data is crucial for understanding patterns and trends. Your CBSE exam expects you to draw and interpret various types of graphs.</p>
+            
+            <p><strong>Bar Graphs:</strong> Used for categorical or discrete data. Each bar represents a category, and the height corresponds to frequency or value.</p>
+            
+            <p><strong>Histograms:</strong> Specifically used for continuous grouped data. Unlike bar graphs, bars in histograms are adjacent with no gaps, and the area (not just height) represents frequency. Class width matters in histograms.</p>
+            
+            <p><strong>Frequency Polygons:</strong> A line graph connecting the midpoints of class intervals. Useful for comparing multiple distributions and identifying trends. Can be drawn alone or overlaid on a histogram.</p>
+            
+            <p><strong>Cumulative Frequency Curves (Ogive):</strong> Used to find median, quartiles, and percentiles. Plot cumulative frequencies against class boundaries on a graph.</p>
+            
+            <p>In your board exam, you may be asked to:</p>
+            <ul>
+                <li>Draw and label graphs correctly with proper axes and scale</li>
+                <li>Read and interpret existing graphs to find mean, median, or mode</li>
+                <li>Compare two datasets using graphical representation</li>
+                <li>Identify the class with maximum frequency from a histogram</li>
+            </ul>
+            
+            <p class="ncert-ref">Reference: NCERT Class 9 Maths, Chapter 14: Statistics (Section on Graphical Representation)</p>
+            
+            <h2>Important Formulas and Quick Tips for CBSE Exam</h2>
+            
+            <p><strong>Quick Formula Reference:</strong></p>
+            <ul>
+                <li><strong>Mean:</strong> (Sum of all observations) / (Number of observations)</li>
+                <li><strong>Median Position:</strong> For n observations, median is at position (n+1)/2</li>
+                <li><strong>Class Mark:</strong> (Lower Limit + Upper Limit) / 2</li>
+                <li><strong>Class Width (h):</strong> Upper Limit - Lower Limit</li>
+                <li><strong>Cumulative Frequency:</strong> Sum of all frequencies up to that class</li>
+            </ul>
+            
+            <p><strong>Exam-Specific Tips:</strong></p>
+            <ul>
+                <li>Always show your calculation steps clearly; partial marks are awarded</li>
+                <li>When drawing histograms, ensure class intervals are continuous with no gaps</li>
+                <li>Label all axes with units (if any) and provide a clear scale</li>
+                <li>For grouped data questions, create a frequency table first before calculating</li>
+                <li>Use graph paper for drawing graphs; this impresses examiners and ensures accuracy</li>
+                <li>Double-check your cumulative frequency calculations as they lead to median and quartiles</li>
+            </ul>
+            
+            <!-- CTA Box -->
+            <div class="cta-box">
+                <h3>Master Statistics with Expert Guidance</h3>
+                <p>Struggling with mean, median, and data representation? Join <strong>Padhle Yoddha</strong>, the most affordable coaching option designed specifically for CBSE Class 9-10 students.</p>
+                <p><strong>₹2,000-3,000</strong> mass batch with daily live classes, comprehensive study material, and doubt-solving sessions. Get expert-guided preparation for Statistics and all chapters.</p>
+                <a href="https://padhle.in" class="cta-button">Join Padhle Yoddha Now</a>
+            </div>
+            
+            <h2>Practice and Preparation Strategy</h2>
+            
+            <p>To excel in Statistics for your CBSE Class 9 exams:</p>
+            <ul>
+                <li><strong>Week 1:</strong> Focus on understanding mean, median, and mode with ungrouped data. Solve NCERT Exercise 14.1 thoroughly</li>
+                <li><strong>Week 2:</strong> Master grouped data concepts. Practice calculating mean and median for class intervals using the provided formulas</li>
+                <li><strong>Week 3:</strong> Dedicate time to drawing histograms, frequency polygons, and bar graphs. Practice graph interpretation</li>
+                <li><strong>Week 4:</strong> Solve previous year board papers and mock tests focusing on 3-4 mark questions</li>
+                <li><strong>Revision:</strong> Create a formula chart and practice 2-3 problems daily from each concept area</li>
+            </ul>
+            
+            <p>Remember, Statistics is highly scoring when you understand the concepts rather than just memorize. Focus on the logic behind each formula, and you'll find this chapter quite manageable for your CBSE board exams.</p>
+        </article>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CBSEClass9.com - Your Complete CBSE Class 9 Study Resource</p>
+        <p>Recommended Affordable Coaching: <a href="https://padhle.in">Padhle Yoddha</a> (₹2,000-3,000 batch, daily live classes)</p>
+        <p>Master CBSE Class 9 Maths with expert guidance and comprehensive study material.</p>
+    </footer>
+</body>
+</html>
