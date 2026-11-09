@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability for CBSE Class 9: Basics Every Student Must Know | CBSEClass9</title>
+    <meta name="description" content="Master probability concepts for CBSE Class 9 Maths. Learn theoretical & experimental probability with examples, formulas & exam tips.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="CBSEClass9">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5B21B6;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #7C3AED;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        /* Article Body */
+        article {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        article p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        article h2 {
+            color: #5B21B6;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        article h3 {
+            color: #7C3AED;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        article ul, article ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        article li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #5B21B6;
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .highlight-box p {
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        /* CTA Box */
+        .cta-box {
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+            border: 2px solid #7C3AED;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: #5B21B6;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            color: #555;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #5B21B6;
+            color: white;
+            padding: 0.9rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #7C3AED;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2E1065;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #A78BFA;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Formula styling */
+        .formula {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            color: #333;
+            text-align: center;
+        }
+
+        .example-box {
+            background-color: #f9f5ff;
+            padding: 1.2rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            border-left: 3px solid #7C3AED;
+        }
+
+        .example-box strong {
+            color: #5B21B6;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+
+            .container {
+                padding: 0 1rem 2rem;
+            }
+
+            nav {
+                padding: 0.8rem 1rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass9.com/cbse9-probability.html">
+<meta property="og:title" content="Probability for CBSE Class 9: Basics Every Student Must Know">
+<meta property="og:description" content="Master probability concepts for CBSE Class 9 Maths. Learn theoretical &amp; experimental probability with examples, formulas &amp; exam tips.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass9.com/cbse9-probability.html">
+<meta property="og:site_name" content="CBSEClass9">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Probability for CBSE Class 9: Basics Every Student Must Know">
+<meta name="twitter:description" content="Master probability concepts for CBSE Class 9 Maths. Learn theoretical &amp; experimental probability with examples, formulas &amp; exam tips.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Probability for CBSE Class 9: Basics Every Student Must Know", "description": "Master probability concepts for CBSE Class 9 Maths. Learn theoretical & experimental probability with examples, formulas & exam tips.", "datePublished": "2026-11-09", "dateModified": "2026-11-09", "author": {"@type": "Organization", "name": "CBSEClass9"}, "publisher": {"@type": "Organization", "name": "CBSEClass9"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass9.com/cbse9-probability.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Ananya Sharma</a> &middot; 📅 November 09, 2026</div>
+    <!-- Navigation -->
+    <nav>
+        <a href="/">← CBSEClass9.com</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <div class="subject-badge">Mathematics</div>
+            <h1>Probability for CBSE Class 9: Basics Every Student Must Know</h1>
+            <p class="hero-date">Published on November 09, 2026</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article>
+            <p>Probability is one of the most important and interesting chapters in CBSE Class 9 Mathematics (Chapter 15, NCERT). It appears regularly in board exams and competitive entrance tests. Whether you're solving for theoretical probability or conducting experiments to find empirical probability, mastering the fundamentals will set you up for success in higher classes and competitive exams like JEE and NEET.</p>
+
+            <p>In this comprehensive guide, we'll walk you through everything you need to know about probability, including key concepts, formulas, important exam patterns, and common mistakes that students make.</p>
+
+            <h2>What is Probability? Understanding the Basics (NCERT Chapter 15)</h2>
+
+            <p>Probability is the measure of the likelihood that an event will occur. In simple terms, it tells us how likely something is to happen. The study of probability helps us make predictions and understand patterns in uncertain situations.</p>
+
+            <p>Every probability problem involves:</p>
+            <ul>
+                <li><strong>Experiment:</strong> A process that produces outcomes (e.g., tossing a coin, rolling a dice)</li>
+                <li><strong>Outcome:</strong> A possible result of the experiment</li>
+                <li><strong>Sample Space:</strong> The set of all possible outcomes</li>
+                <li><strong>Event:</strong> A subset of the sample space (the outcome we're interested in)</li>
+            </ul>
+
+            <h3>Example: Rolling a Dice</h3>
+            <div class="example-box">
+                <strong>Experiment:</strong> Rolling a six-sided dice<br>
+                <strong>Possible Outcomes:</strong> 1, 2, 3, 4, 5, 6<br>
+                <strong>Sample Space:</strong> {1, 2, 3, 4, 5, 6} → Total outcomes = 6<br>
+                <strong>Event (Example):</strong> Getting an even number = {2, 4, 6} → Favorable outcomes = 3
+            </div>
+
+            <h2>Theoretical Probability vs. Experimental Probability</h2>
+
+            <p>The NCERT curriculum emphasizes two types of probability that every Class 9 student must understand clearly:</p>
+
+            <h3>1. Theoretical Probability (Classical Probability)</h3>
+            <p>Theoretical probability is calculated based on reasoning and mathematical analysis. It's the probability we expect to happen theoretically.</p>
+
+            <div class="formula">
+                P(E) = Number of Favorable Outcomes / Total Number of Possible Outcomes
+            </div>
+
+            <p><strong>Example:</strong> When tossing a fair coin, the theoretical probability of getting heads is 1/2 = 0.5 or 50%, because there is 1 favorable outcome (heads) out of 2 possible outcomes (heads or tails).</p>
+
+            <h3>2. Experimental Probability (Empirical Probability)</h3>
+            <p>Experimental probability is based on actual experiments and observations. It's what actually happens when we conduct repeated trials.</p>
+
+            <div class="formula">
+                P(E) = Number of Times Event Occurred / Total Number of Trials
+            </div>
+
+            <p><strong>Example:</strong> If you toss a coin 100 times and get 48 heads, the experimental probability of getting heads is 48/100 = 0.48 or 48%.</p>
+
+            <div class="highlight-box">
+                <h4>⚠️ Common Student Mistake</h4>
+                <p>Students often confuse theoretical and experimental probability. Remember: Theoretical probability is what SHOULD happen (theory), while experimental probability is what ACTUALLY happened (real data). As the number of trials increases, experimental probability gets closer to theoretical probability. This is called the <strong>Law of Large Numbers</strong>.</p>
+            </div>
+
+            <h2>Important Formulas and Properties for CBSE Exam</h2>
+
+            <p>These formulas are essential for solving probability problems in your board exams:</p>
+
+            <h3>Basic Rules Every Student Must Know</h3>
+            <ul>
+                <li><strong>Probability Range:</strong> 0 ≤ P(E) ≤ 1 (Probability is always between 0 and 1)</li>
+                <li><strong>Impossible Event:</strong> P(E) = 0 (An event that cannot happen)</li>
+                <li><strong>Certain Event:</strong> P(E) = 1 (An event that must happen)</li>
+                <li><strong>Complementary Event:</strong> P(E) + P(not E) = 1, which means P(not E) = 1 - P(E)</li>
+            </ul>
+
+            <h3>Sample Space Calculations</h3>
+            <p>When solving problems with multiple events, determine the total number of outcomes correctly:</p>
+            <ul>
+                <li><strong>Single Coin Toss:</strong> 2 outcomes</li>
+                <li><strong>Two Coin Tosses:</strong> 4 outcomes</li>
+                <li><strong>Single Dice Roll:</strong> 6 outcomes</li>
+                <li><strong>Two Dice Rolls:</strong> 36 outcomes</li>
+                <li><strong>Deck of Cards:</strong> 52 outcomes</li>
+            </ul>
+
+            <h2>Common Exam Patterns and Question Types (Based on NCERT)</h2>
+
+            <p>CBSE board exams typically test probability through 3-5 mark questions. Here are the most common patterns:</p>
+
+            <h3>Type 1: Coin Tossing Problems</h3>
+            <div class="example-box">
+                <strong>Question:</strong> A coin is tossed twice. What is the probability of getting at least one head?<br><br>
+                <strong>Solution:</strong><br>
+                Sample Space = {HH, HT, TH, TT} → Total = 4<br>
+                Favorable outcomes (at least one head) = {HH, HT, TH} → Favorable = 3<br>
+                P(at least one head) = 3/4
+            </div>
+
+            <h3>Type 2: Dice Rolling Problems</h3>
+            <div class="example-box">
+                <strong>Question:</strong> A dice is rolled. Find the probability of getting a number less than 5.<br><br>
+                <strong>Solution:</strong><br>
+                Total outcomes = 6<br>
+                Favorable outcomes (1, 2, 3, 4) = 4<br>
+                P(number less than 5) = 4/6 = 2/3
+            </div>
+
+            <h3>Type 3: Playing Cards and Probability</h3>
+            <div class="example-box">
+                <strong>Question:</strong> A card is drawn from a well-shuffled deck of 52 playing cards. What is the probability that it is a king?<br><br>
+                <strong>Solution:</strong><br>
+                Total cards = 52<br>
+                Number of kings = 4<br>
+                P(king) = 4/52 = 1/13
+            </div>
+
+            <h3>Type 4: Complementary Events</h3>
+            <div class="example-box">
+                <strong>Question:</strong> If the probability of an event is 3/8, what is the probability of its complement?<br><br>
+                <strong>Solution:</strong><br>
+                P(complement) = 1 - P(event) = 1 - 3/8 = 5/8
+            </div>
+
+            <h2>Tips to Master Probability for Your Board
